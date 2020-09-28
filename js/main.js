@@ -27,7 +27,7 @@ function fetchImages(){
 }
 
 function submitGrade(el){
-    if (document.getElementById("mark").value >= 0 && document.getElementById("mark").value < 11)
+    if (el.closest("#mark").value >= 0 && el.closest("mark").value < 11)
     {   
         el.closest("#image-container").classList.add("shrink");
 
