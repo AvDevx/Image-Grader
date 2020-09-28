@@ -27,9 +27,9 @@ function fetchImages(){
 }
 
 function submitGrade(el){
-    if (el.closest("#mark").value >= 0 && el.closest("mark").value < 11)
-    {   
-        el.closest("#image-container").classList.add("shrink");
-
+    var mark_container = el.closest(".marks");
+    if ( mark_container.querySelector("#mark").value >= 0 && mark_container.querySelector("#mark").value < 11 && mark_container.querySelector("#mark").value != ""){
+        console.log(mark_container.querySelector("#mark").value);
+      el.closest("#image-container").classList.add("shrink");
     }
 }
