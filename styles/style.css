@@ -327,8 +327,9 @@ input[type="file"] {
       padding: 20px 20vw;
     }
     footer{
-      bottom: 15px;
+      position: inherit;
       font-size: 12px;
+      padding-bottom: 25px;
     }
 }
 
